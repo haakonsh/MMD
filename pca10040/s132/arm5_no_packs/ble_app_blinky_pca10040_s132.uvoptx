@@ -116,6 +116,11 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>DLGUARM</Key>
+          <Name>/</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>ARMRTXEVENTFLAGS</Key>
           <Name>-L70 -Z18 -C0 -M0 -T1</Name>
         </SetRegEntry>
@@ -172,22 +177,6 @@
           <Filename>..\..\..\..\..\..\components\libraries\hardfault\hardfault_implementation.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\nrf52832_xxaa\../../../../../../components/libraries/hardfault/hardfault_implementation.c\68</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>68</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>150932</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>..\..\..\..\..\..\components\ble\ble_services\ble_lbs\ble_lbs.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\nrf52832_xxaa\../../../../../../components/ble/ble_services/ble_lbs/ble_lbs.c\68</Expression>
         </Bp>
       </Breakpoint>
       <Tracepoint>
