@@ -47,3 +47,5 @@ The differences between this example and the standard ble_app_blinky demo are li
 ## Wait, that's it!?
 Youp, that's it!
 
+Happy debugging!
+
