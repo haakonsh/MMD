@@ -30,7 +30,7 @@ Steps:
 
 5. Flash the application to the nRF52DK via Keil (F8). 
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'No'. This is done to prevent the J-link driver to enter MMD when flashing the application. You can also flash the application through nrfjprog without any modification. 
-![JlinkPromptNo](Documentation/Images/JlinkPromptNo.png " ")
+![JlinkPromptNo](Documentation/Images/JLinkPromptNo.png " ")
 
 6. Enter debug mode (ctrl+F5).
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'Yes'. 
