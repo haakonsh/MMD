@@ -22,7 +22,7 @@ I've made an example that will demonstrate the usefulness of MMD:
 Steps:
 1. Unzip/clone into SDK14.2/examples/ble_peripheral
 
-2. Open the keil project file MMD/pca10040/s132/arm5_no_packs/ble_app_blinky_pca10040_s132.uvprojx 
+2. Open the keil project file [ble_app_blinky_pca10040_s132.uvprojx](pca10040/s132/arm5_no_packs/ble_app_blinky_pca10040_s132.uvprojx)
 
 3. Compile the example(F7).
 
