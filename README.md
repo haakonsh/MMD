@@ -11,7 +11,7 @@ Requirements:
 
 
 ## What exactly is MMD?
-Monitor Mode Debugging is essentially an interrupt service routine that contains an infinite loop. The MMD ISR has an execution priority equeal to or higher than your application, but lower than the code you want to run unimpeded. When the CPU receives a halt command from the debugger, it will execute the MMD ISR instead of halting, preempting the application code. While the CPU is busy running the MMD ISR(infinite loop), code with higher execution priority(SoftDevice, drivers, etc) can preempt the MMD ISR, but lower execution priority code(main application, libraries, etc) cannot.
+Monitor Mode Debugging is essentially an interrupt service routine that contains an infinite loop. The MMD ISR has an execution priority equeal to or higher than your application, but lower than the code you want to run unimpeded. When the CPU receives a halt command from the debugger, it will execute the MMD ISR instead of halting, preempting the application code. While the CPU is busy running the MMD ISR (infinite loop), code with higher execution priority (SoftDevice, drivers, etc) can preempt the MMD ISR, but lower execution priority code (main application, libraries, etc) cannot.
 
 When single stepping through code, a debugger will insert a breakpoint after each step. This means that MMD can also handle stepping through code of equal or lower priority without preempting higher priority calls. 
 
@@ -36,7 +36,7 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 
 7. Start code execution (F5).
 
-8. Open nRF Connect and connect to 'NORDIC_BLINKY'. Expand the 'Nordic LED Button Service' and enable notifications for the Button characteristics(Press the three downward pointing arrows button).
+8. Open nRF Connect and connect to 'NORDIC_BLINKY'. Expand the 'Nordic LED Button Service' and enable notifications for the Button characteristics (press the three downward pointing arrows button).
 
 9. Press 'Button 1' on the nRF52DK and verify that the Button characteristic's Value field appears and changes value from 'Button pressed' to 'Button released' when pushing the button.
 
@@ -48,17 +48,17 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 
 13. You have now verified that the BLE link remained intact despite halting the CPU. 
 
-14. Feel free to play around with the LED and single stepping through application code. Now you can finnaly figure out what your BLE service is actually doing without losing the BLE link^^
+14. Feel free to play around with the LED and single stepping through application code. Now you can finnaly figure out what your BLE service is actually doing without losing the BLE link ^^
 
 
 ## That's great, but how is this really implemented?
 The differences between this example and the standard ble_app_blinky demo are listed below:
 
-1. You need to compile the MMD ISR found in [JLINK_MONITOR_ISR_ARM.s](pca10040\s132\arm5_no_packs\JLINK_MONITOR_ISR_ARM.s)
+1. You need to compile the MMD ISR found in [JLINK_MONITOR_ISR_ARM.s](pca10040/s132/arm5_no_packs/JLINK_MONITOR_ISR_ARM.s)
 
-2. You need to stop the app_timer(and feed a watchdog if needed) with the MMD utility functions that the assembly codeed ISR refers to in [JLINK_MONITOR.c](JLINK_MONITOR.c) and [JLINK_MONITOR.h](JLINK_MONITOR.h)
+2. You need to stop the app_timer (and feed a watchdog if needed) with the MMD utility functions that the assembly codeed ISR refers to in [JLINK_MONITOR.c](JLINK_MONITOR.c) and [JLINK_MONITOR.h](JLINK_MONITOR.h)
 
-3. Enable MMD in the J-link driver: see line 10 and 11 in [JLinkSettings.ini](pca10040\s132\arm5_no_packs\JLinkSettings.ini)
+3. Enable MMD in the J-link driver: see line 10 and 11 in [JLinkSettings.ini](pca10040/s132/arm5_no_packs/JLinkSettings.ini)
 
 ## Wait, that's it!?
 Youp, that's it!
