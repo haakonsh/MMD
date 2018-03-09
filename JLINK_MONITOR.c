@@ -82,7 +82,6 @@ void JLINK_MONITOR_OnExit(void) {
   // Add custom code here
   //
     app_timer_resume();
-//  BSP_ClrLED(0);
 }
 
 /********************************************************************* 
@@ -101,8 +100,6 @@ void JLINK_MONITOR_OnEnter(void) {
   // Add custom code here
   //
     app_timer_pause();
-//  BSP_SetLED(0);
-//  BSP_ClrLED(1);
 }
 
 /********************************************************************* 
@@ -124,7 +121,6 @@ void JLINK_MONITOR_OnPoll(void) {
 #endif
 
   MAIN_MonCnt++;
-//  BSP_ToggleLED(0);
 //  _Delay(500000);
 }
 #endif

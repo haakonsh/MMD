@@ -30,9 +30,11 @@ Steps:
 
 5. Flash the application to the nRF52DK via Keil (F8). 
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'No'. This is done to prevent the J-link driver to enter MMD when flashing the application. You can also flash the application through nrfjprog without any modification. 
+[JlinkPromptNo](Documentation/Images/JlinkPromptNo.png)
 
 6. Enter debug mode (ctrl+F5).
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'Yes'.
+[JlinkPromptYes](Documentation/Images/JlinkPromptYes.png)
 
 7. Start code execution (F5).
 
@@ -51,7 +53,7 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 14. Feel free to play around with the LED and single stepping through application code. Now you can finnaly figure out what your BLE service is actually doing without losing the BLE link ^^
 
 
-## That's great, but how is this really implemented?
+## Hey that really is neat, but how do I implement MMD in my project?
 The differences between this example and the standard ble_app_blinky demo are listed below:
 
 1. You need to compile the MMD ISR found in [JLINK_MONITOR_ISR_ARM.s](pca10040/s132/arm5_no_packs/JLINK_MONITOR_ISR_ARM.s)
@@ -61,7 +63,7 @@ The differences between this example and the standard ble_app_blinky demo are li
 3. Enable MMD in the J-link driver: see line 10 and 11 in [JLinkSettings.ini](pca10040/s132/arm5_no_packs/JLinkSettings.ini)
 
 ## Wait, that's it!?
-Youp, that's it!
+Youp, that's it!|
 
 Happy debugging!
 
