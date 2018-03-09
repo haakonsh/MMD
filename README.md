@@ -24,17 +24,17 @@ Steps:
 
 2. Open the keil project file [ble_app_blinky_pca10040_s132.uvprojx](pca10040/s132/arm5_no_packs/ble_app_blinky_pca10040_s132.uvprojx)
 
-3. Compile the example(F7).
+3. Compile the example (F7).
 
 4. Erase and flash an nRF52DK with 's132_nrf52_5.0.0_softdevice.hex' found in SDK14.2\components\softdevice\s132\hex
 
-5. Flash the application to the nRF52DK via Keil(F8). 
+5. Flash the application to the nRF52DK via Keil (F8). 
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'No'. This is done to prevent the J-link driver to enter MMD when flashing the application. You can also flash the application through nrfjprog without any modification. 
 
-6. Enter debug mode(ctrl+F5).
+6. Enter debug mode (ctrl+F5).
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'Yes'.
 
-7. Start code execution(F5).
+7. Start code execution (F5).
 
 8. Open nRF Connect and connect to 'NORDIC_BLINKY'. Expand the 'Nordic LED Button Service' and enable notifications for the Button characteristics(Press the three downward pointing arrows button).
 
