@@ -58,14 +58,14 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 ## Hey that really is neat, but how do I implement MMD in my project?
 The differences between this example and the standard ble_app_blinky demo are listed below:
 
-1. You need to compile the MMD ISR found in [JLINK_MONITOR_ISR_ARM.s](pca10040/s132/arm5_no_packs/JLINK_MONITOR_ISR_ARM.s)
+1. You need to compile the MMD ISR (DebugMon_Handler) found in [JLINK_MONITOR_ISR_ARM.s](pca10040/s132/arm5_no_packs/JLINK_MONITOR_ISR_ARM.s)
 
-2. You need to stop the app_timer (and feed a watchdog if needed) with the MMD utility functions that the assembly codeed ISR refers to in [JLINK_MONITOR.c](JLINK_MONITOR.c) and [JLINK_MONITOR.h](JLINK_MONITOR.h)
+2. You need to stop the app_timer (and feed a watchdog if needed) with the MMD utility functions that the assembly coded ISR refers to in [JLINK_MONITOR.c](JLINK_MONITOR.c) and [JLINK_MONITOR.h](JLINK_MONITOR.h)
 
 3. Enable MMD in the J-link driver: see line 10 and 11 in [JLinkSettings.ini](pca10040/s132/arm5_no_packs/JLinkSettings.ini)
 
 ## Wait, that's it!?
-Youp, that's it!|
+Youp, that's it.
 
 Happy debugging!
 
