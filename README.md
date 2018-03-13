@@ -34,7 +34,6 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 
 6. Enter debug mode (ctrl+F5).
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'Yes'. 
-
 ![JlinkPromptYes](Documentation/Images/JLinkPromptYes.png " ")
 
 7. Start code execution (F5).
