@@ -118,7 +118,7 @@
     gcc_optimization_level="Optimize For Size" />
   <configuration
     Name="Debug"
-    c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    c_preprocessor_definitions="DEBUG;DEBUG_NRF;CONFIG_JLINK_MONITOR_ENABLED"
     gcc_debugging_level="Level 3"
     gcc_optimization_level="None" />
 </solution>
