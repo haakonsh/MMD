@@ -3,7 +3,7 @@
 Steps:
 1. Unzip/clone into SDK14.2/examples/ble_peripheral
 
-2. Open the keil project file [ble_app_blinky_pca10040_s132.uvprojx](/ble_app_blinky_pca10040_s132.uvprojx)
+2. Open the keil project file [ble_app_blinky_pca10040_s132.uvprojx](ble_app_blinky_pca10040_s132.uvprojx)
 
 3. Compile the example.
 
