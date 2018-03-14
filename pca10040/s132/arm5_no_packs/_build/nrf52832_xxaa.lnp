@@ -1,7 +1,7 @@
 --cpu Cortex-M4.fp
 ".\_build\main.o"
-".\_build\jlink_monitor_isr_arm.o"
 ".\_build\jlink_monitor.o"
+".\_build\jlink_monitor_isr_arm.o"
 ".\_build\boards.o"
 ".\_build\ble_advdata.o"
 ".\_build\ble_conn_params.o"

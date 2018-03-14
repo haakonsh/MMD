@@ -390,14 +390,14 @@
               <FilePath>..\config\sdk_config.h</FilePath>
             </File>
             <File>
-              <FileName>JLINK_MONITOR_ISR_ARM.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\JLINK_MONITOR_ISR_ARM.s</FilePath>
-            </File>
-            <File>
               <FileName>JLINK_MONITOR.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\JLINK_MONITOR.c</FilePath>
+            </File>
+            <File>
+              <FileName>JLINK_MONITOR_ISR_ARM.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\JLINK_MONITOR_ISR_ARM.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -3037,14 +3037,14 @@
               <FilePath>..\config\sdk_config.h</FilePath>
             </File>
             <File>
-              <FileName>JLINK_MONITOR_ISR_ARM.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\JLINK_MONITOR_ISR_ARM.s</FilePath>
-            </File>
-            <File>
               <FileName>JLINK_MONITOR.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\JLINK_MONITOR.c</FilePath>
+            </File>
+            <File>
+              <FileName>JLINK_MONITOR_ISR_ARM.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\JLINK_MONITOR_ISR_ARM.s</FilePath>
             </File>
           </Files>
         </Group>
