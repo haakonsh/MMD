@@ -15,7 +15,7 @@ NOTE: In SES you have the option to flash additional files, in this example the 
 5. Enter debug mode.
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'Yes'. 
 
-![JlinkPromptYes](Documentation/Images/JLinkPromptYes.png " ")
+![JlinkPromptYes](../../../Documentation/Images/JLinkPromptYes.png " ")
 
 6. Start code execution.
 
