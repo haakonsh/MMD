@@ -52,7 +52,7 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 
 13. You have now verified that the BLE link remained intact despite halting the CPU. 
 
-14. Feel free to play around with the LED and single stepping through application code. Now you can finnaly figure out what your BLE service is actually doing without losing the BLE link ^^
+14. Feel free to play around with the LED and single stepping through application code. Now you can finally figure out what your BLE service is actually doing without losing the BLE link ^^
 
 
 ## Hey that really is neat, but how do I implement MMD in my project?
