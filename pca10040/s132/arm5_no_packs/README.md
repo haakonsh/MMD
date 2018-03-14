@@ -9,12 +9,12 @@ Steps:
 
 4. Erase and flash an nRF52DK with 's132_nrf52_5.0.0_softdevice.hex' found in SDK14.2\components\softdevice\s132\hex
 
-5. Flash the application to the nRF52DK via Keil (F8). 
+5. Flash the application to the nRF52DK via Keil. 
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'No'. This is done to prevent the J-link driver to enter MMD when flashing the application. You can also flash the application through nrfjprog without any modification. 
 
 ![JlinkPromptNo](../../../Documentation/Images/JLinkPromptNo.png " ")
 
-6. Enter debug mode (ctrl+F5).
+6. Enter debug mode.
 NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need to press 'Yes'. 
 
 ![JlinkPromptYes](../../../Documentation/Images/JLinkPromptYes.png " ")
@@ -47,7 +47,7 @@ The differences between this example and the standard ble_app_blinky demo are li
 
 4. Enable MMD in the J-link driver: see line 10 and 11 in [JLinkSettings.ini](JLinkSettings.ini)
 
-## Wait, that's it!?
+### Wait, that's it!?
 Youp, that's it.
 
 Happy debugging!

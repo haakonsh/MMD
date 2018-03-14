@@ -43,7 +43,7 @@ The differences between this example and the standard ble_app_blinky demo are li
 
 3. You need to enable the interrupt by NVIC_SetPriority(DebugMonitor_IRQn, _PRIO_SD_LOW) at the start of your main loop. The priority level determines what execution priority levels you want to block.
 
-## Wait, that's it!?
+###Wait, that's it!?
 Youp, that's it.
 
 Happy debugging!
