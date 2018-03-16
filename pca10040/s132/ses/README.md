@@ -33,11 +33,11 @@ NOTE: When prompted with the dialog box 'Monitor Mode missing license' you need 
 
 12. You have now verified that the BLE link remained intact despite halting the CPU.
 
-14. Next I want you to turn on the LED with nRF Connect and halt the CPU.
+14. Next I want you to turn on the LED with nRF Connect, then halt the CPU.
 
-15. When the CPU is halted I want you to turn the LED off in nRF Connect and observe that the LED is still on.
+15. While the CPU is halted I want you to turn the LED off in nRF Connect and observe that the LED is still on.
 
-16. Last I want you to restart the CPU and observe that the LED turns off. This means that SoftDevice events are queued when the CPU is halted in MMD mode.
+16. The last thing I want you to do is to restart the CPU and observe that the LED turns off. This means that SoftDevice events are queued when the CPU is halted in MMD mode.
 
 Feel free to play around with single stepping through application code. Now you can finally figure out what your BLE service is actually doing without losing the BLE link ^^
 
