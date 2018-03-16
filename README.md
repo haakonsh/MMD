@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Monitor Mode Debugging enables you to halt and step through low priority code whilst letting high priority code execute as normal. MMD enables the user to debug his program in many new ways as part of the running code can be isolated while other parts of the code is not. Interrupts, Events, and other signals can be turned ON/OFF on the fly, letting the user debug a vast number of system states that have previously been extremly difficult to debug.
+Monitor Mode Debugging enables you to halt and step through low priority code whilst letting high priority code execute as normal. MMD enables the user to debug his program in new ways as it lets some part of the code execute and others not, depending on its execution priority. Interrupts, Events, and other signals can be turned ON/OFF on the fly, letting the user debug a vast number of system states that have previously been difficult to debug.
 
 ### Requirements:
 
