@@ -42,7 +42,7 @@ The differences between this example and the standard ble_app_blinky demo are li
 
 1. You need to compile the MMD ISR (DebugMon_Handler) found in [JLINK_MONITOR_ISR_ARM.s](../../../JLINK_MONITOR_ISR_ARM.s)
 
-2. You need to stop the app_timer (and feed a watchdog if needed) with the MMD utility functions that the assembly coded ISR refers to in [JLINK_MONITOR.c](../../../JLINK_MONITOR.c) and [JLINK_MONITOR.h](../../../JLINK_MONITOR.h)
+2. You need to stop the app_timer (and feed a watchdog if needed) with the MMD utility functions that the assembly coded ISR refers to in [JLINK_MONITOR.c](../../../JLINK_MONITOR.c) and [JLINK_MONITOR.h](../../../JLINK_MONITOR.h). If you fail to feed a watchdog it will trigger a hardfault followed by a chip reset. The app timer library is the timer used to synchronize many application events like scheduling, timeouts, etc, and it needs to be stopped when we have "halted" the CPU in the MMD ISR. Stopping the app timer is a concious choice by the user, if you want to keep the app timer running you can do that. It is up to the user to decide what to debug. 
 
 3. You need to enable the interrupt by NVIC_SetPriority(DebugMonitor_IRQn, _PRIO_SD_LOW) at the start of your main loop. All the application/protocol_stack context with priority less that the selected priority will be blocked by the DebugMonitor and is available to debug/Step. All the application/protocol_stack context with priority higher than the selected priority will will run uninterrupted irrespective of your debugger state. In this case all we will block all low priority app and softdevice interrupts. But the application high priority interrupts and softdevice radio and house_keeping timer interrupts will run uninterrupted
 

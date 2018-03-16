@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Monitor Mode Debugging enables you to halt and step through low priority code whilst letting high priority code execute as normal. With MMD you can debug your application while maintaining a BLE connection.
+Monitor Mode Debugging enables you to halt and step through low priority code whilst letting high priority code execute as normal. MMD enables the user to debug his program in many new ways as part of the running code can be isolated while other parts of the code is not. Interrupts, Events, and other signals can be turned ON/OFF on the fly, letting the user debug a vast number of system states that have previously been extremly difficult to debug.
 
 ### Requirements:
 
@@ -17,8 +17,9 @@ Monitor Mode Debugging is essentially an interrupt service routine that contains
 
 When single stepping through code, a debugger will insert a breakpoint after each step. This means that MMD can also handle stepping through code of equal or lower priority without preempting higher priority calls. 
 
-
 ## Okay that sounds great, but i'm still not convinced that this is useful for me
+
+With MMD you can debug your application while maintaining a BLE connection.
 
 I've made an example for Keil and SES based on the ble_app_blinky_s132 tutorial in SDK14.2. The goal of this example is to show how one can maintain an active BLE connection while "halting" the CPU or single stepping through the application code.
 
